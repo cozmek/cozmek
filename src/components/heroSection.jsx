@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <div className="h-auto md:flex custom-gradient font-medium text-[#192335CC] flex-row">
       {/* Left taglines */}
-      <div className="md:w-1/2 w-full md:ml-10 p-10 px-10 2xl:pl-36">
+      <div className="md:w-1/2 w-full lg:ml-10 p-10 px-10 2xl:pl-36">
         <h1 className="p-3 bg-white inline-block mt-9">
           🏆 AI: Shaping the Future of Our World
         </h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
         </button>
       </div>
       {/* Right Slider */}
-      <div className="w-auto md:w-1/2 sm:py-10  flex py-4 px-6">
+      <div className="w-auto md:w-1/2 sm:py-10 flex  py-4 px-2 xs1:px-6 ">
         <YourComponent />
       </div>
     </div>

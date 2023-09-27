@@ -49,15 +49,17 @@ import "swiper/css";
 const YourComponent = () => {
   return (
     <Swiper
+    // spaceBetween={0}
+    // slidesPerView={3}
       effect={"cards"}
       grabCursor={true}
       modules={[EffectCards]}
-      className=" xs:w-[22.5rem]  xs:h-[37.5rem] xl:w-[30.5rem]  xl:h-[32.5rem] h-auto w-auto">
+      className=" xs:w-[22.5rem] overflow-hidden  xs:h-auto xl1:h-[37.5rem] xl:w-[30.5rem]  xl:h-[32.5rem] h-auto w-auto">
       {card.map((Card, index) => {
         return (
           <SwiperSlide
             key={index}
-            className="p-0 m-0 h-fit"
+            className="p-0 m-0 h-fit "
             // "p-0 m-0 w-[22.5rem] h- lg:min-h-[30.5rem] xl:min-h-[32.5rem]"
           >
             <Slide card={Card} />
