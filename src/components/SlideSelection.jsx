@@ -165,10 +165,10 @@ const SlideSelection = () => {
 
                 <div className="flex items-center justify-between pt-5">
                   <div className="flex gap-3 font-extrabold">
-                    <h2 className="text-green-500 text-sm xs:text-2xl">
+                    <h2 className="text-green-500 text-sm  xs:text-lg xs1:text-2xl">
                       ₹ {card?.DiscountAmount}
                     </h2>
-                    <h2 className="line-through text-red-500 text-xs xs:text-xl">
+                    <h2 className="line-through text-red-500 text-xs  xs:text-md xs1:text-xl">
                       ₹ {card?.OriginalAmount}
                     </h2>
                   </div>
