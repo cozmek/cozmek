@@ -83,19 +83,19 @@ const WorkingWith = () => {
           </h2>
           <h1 className="font-bold">Who are Working With</h1>
         </div>
-        <div className="flex items-center justify-center md:items-end md:justify-end w-full  md:w-1/4 px-2  md:px-6">
+        <div className="flex items-center justify-center md:items-end md:justify-end w-full  md:w-1/4  px-2  ">
           {" "}
-          <div className="">
-            <button className="px-2 md:px-4 rounded-full " onClick={handlePrev}>
+          <div className="lg:px-6">
+            <button className=" rounded-full px-1 " onClick={handlePrev}>
               <img
-                className="w-8 md:w-auto rounded-full hover:bg-[#def3f3]"
+                className="w-8 md:w-12 lg:w-auto rounded-full hover:bg-[#def3f3]"
                 src={LeftArrow}
                 alt="Prev"
               />
             </button>
-            <button onClick={handleNext}>
+            <button onClick={handleNext} className=" rounded-full px-1">
               <img
-                className="w-8 bg-[#237E7E] hover:bg-[#a4dfdf] md:w-auto rounded-full"
+                className="w-8 md:w-12 lg:w-auto bg-[#237E7E] hover:bg-[#a4dfdf]  rounded-full"
                 src={RightArrow}
                 alt="Next"
               />
