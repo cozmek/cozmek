@@ -62,7 +62,7 @@ const Testimonials = () => {
             Technology for All
           </button>
         </div>
-        <h1 className="text-center font-bold uppercase text-4xl md:text-5xl mt-5">
+        <h1 className="text-center font-bold uppercase text-2xl md:text-4xl mt-5">
           Embracing Continuous Learning <br /> and Growth with Cozmek
         </h1>
       </div>
