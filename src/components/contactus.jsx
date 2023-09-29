@@ -76,7 +76,7 @@ const Contactus = () => {
         PhoneNumber: "",
       });
       fetch(
-        "https://script.google.com/macros/s/AKfycbwftkWhwdoA6QXsT4SajNKK7POvbCr38uc_KSw9PyChLBP5TF2FnHYq3BS-AJncl3QdBg/exec",
+        "https://script.google.com/macros/s/AKfycbwEcsjNy4Ru-61KMARVpTxcJif07GvGNKmhvkLylW6f4GdnIDZB5yvtOuaqMJ5juM7G/exec",
         {
           method: "POST",
           mode: "cors",
