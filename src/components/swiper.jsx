@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Pagination } from "swiper/modules";
 import Slide from "../components/slide";
 import BasicCardimg from "/src/assets/BasicCardimg.png";
 import basiccard from "/src/assets/basic card.png";
@@ -7,6 +7,10 @@ import InterMediateCardimg from "/src/assets/InterMediateCardimg.png";
 import Intermediatecard from "/src/assets/Intermediate card.png";
 import AdvanceCardImg from "/src/assets/AdvanceCardImg.jpeg";
 import advancedcard from "/src/assets/advanced card.png";
+import "swiper/css/pagination";
+import "swiper/css/effect-cards";
+import "swiper/css";
+import "swiper/css/navigation";
 
 let card = [
   {
@@ -43,30 +47,25 @@ let card = [
     OriginalAmount: "85,000",
   },
 ];
-import "swiper/css/effect-cards";
-import "swiper/css";
 
 const YourComponent = () => {
   return (
-    <Swiper
-    // spaceBetween={0}
-    // slidesPerView={3}
-      effect={"cards"}
-      grabCursor={true}
-      modules={[EffectCards]}
-      className=" xs:w-[22.5rem] overflow-hidden  xs:h-auto xl1:h-[37.5rem] xl:w-[30.5rem]  xl:h-[32.5rem] h-auto w-auto">
-      {card.map((Card, index) => {
-        return (
-          <SwiperSlide
-            key={index}
-            className="p-0 m-0 h-fit "
-            // "p-0 m-0 w-[22.5rem] h- lg:min-h-[30.5rem] xl:min-h-[32.5rem]"
-          >
-            <Slide card={Card} />
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+    <>
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        modules={[EffectCards, Pagination]}
+        pagination={{ clickable: true }}
+        className=" xs:w-[22.5rem] overflow-hidden xs:h-auto xl1:h-[37.5rem] xl:w-[30.5rem]  xl:h-[32.5rem] h-auto w-auto ">
+        {card.map((Card, index) => {
+          return (
+            <SwiperSlide key={index} className="p-0 m-0 h-fit">
+              <Slide card={Card} />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
   );
 };
 
