@@ -23,8 +23,7 @@ const HeroSection = () => {
           className="text-xl xs:text-2xl md:text-4xl font-normal uppercase text-epilogue"
           style={{
             fontFamily: "Epilogue, sans-serif",
-          }}
-        >
+          }}>
           AI Pioneering Excellence
         </span>
         <p className="py-4 text-[#6B7385]  text-base md:text-lg font-normal tracking-widest capitalize">
@@ -37,14 +36,15 @@ const HeroSection = () => {
         </p>
         <button
           className="bg-[#0B7077] hover:bg-[#329aa1] p-4 px-8 rounded-md text-white"
-          onClick={handleProgramClick}
-        >
+          onClick={handleProgramClick}>
           View Our Programs
         </button>
       </div>
       {/* Right Slider */}
-      <div className="w-auto md:w-1/2 sm:py-10 flex  py-4 px-2 xs1:px-6 ">
-        <YourComponent />
+      <div className="w-auto md:w-1/2 sm:py-10 box-border py-4 px-2 xs1:px-6 ">
+        <div className="flex justify-center  box-content">
+          <YourComponent />
+        </div>
       </div>
     </div>
   );
