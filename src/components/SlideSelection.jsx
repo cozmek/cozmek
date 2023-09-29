@@ -14,14 +14,14 @@ let slide = [
     type: "Basic",
     MainHead: "AI Crash Course Program (6 Months)",
     Discription:
-      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artificial Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
+      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artifical Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
     DiscountAmount: "15,000",
     OriginalAmount: "25,000",
     Curriculum: "Recorded Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certification",
     Support: "Personal Mentor",
     Projects: "2 Real-World Projects",
-    "Community Access": "AI Community",
+    CommunityAccess: "AI Community",
     Placement: "100% Placement Assistance",
   },
   {
@@ -38,7 +38,7 @@ let slide = [
     Evaluation: "Exams and CRBS Certifications",
     Support: "Personal Mentor, Interview Training, Expert Talk Sessions",
     Projects: "4 Real-World Projects",
-    "Community Access": "AI Community, Free Hackathon Entry",
+    CommunityAccess: "AI Community, Free Hackathon Entry",
     Placement: "100% Placement Assistance",
   },
   {
@@ -48,15 +48,15 @@ let slide = [
     type: "Advanced",
     MainHead: "AI Job Guarantee Program with Internship (1 Year)",
     Discription:
-      "Secure your AI career with our 1-year Job Guarantee Program. Enjoy recorded/live classes, assignments, CRBS certifications, and 8+ AI projects. Engage in our AI community, Hackathons, and receive interview training, a 6-month internship, Money-Back Job Guarantee, and 100% Job Guarantee.",
+      "Secure your AI career with our 1-year Job Guarantee Program. Enjoy recorded/live classes, assignments, CRBS certifications, and you'll tackle 8+ impactful AI projects. Engage in our AI community, Hackathons, and receive interview training, a 6-month internship, Money-Back Job Guarantee, and 100% Job Guarantee.",
     DiscountAmount: "60,000",
     OriginalAmount: "85,000",
-    Curriculum: "Recorded and Live Classes, Assignments, Practicals",
+    Curriculum: "Recorded & Live Classes, Assignments, Practicals",
     Evaluation: " Exams and CRBS Certifications",
     Support:
       " Personal Mentor, Interview Training, Talk Sessions, Resume Preparation, Individual Doubt Clearing",
     Projects: "8+ Real-World Projects",
-    "Community Access": "AI Community, Free Hackathon Entry",
+    CommunityAccess: "AI Community, Free Hackathon Entry",
     Placement: "100% Job Guarantee, 6-Month Internship",
   },
 ];
@@ -78,7 +78,7 @@ const SlideSelection = () => {
           return (
             <div
               key={index}
-              className=" max-w-[32rem] min-h-[720px]  container  bg-[#FAFAFA] rounded-xl overflow-hidden border-2  relative"
+              className=" max-w-[32rem] min-h-[720px] xl:h-[750px]  container  bg-[#FAFAFA] rounded-xl overflow-hidden border-2  relative"
               style={{
                 flexShrink: 0, // Prevent flex-shrinking
               }}
@@ -107,14 +107,16 @@ const SlideSelection = () => {
                 <img src={card?.roundImages} className="" alt="cards" />
               </div>
 
-              <div className="p-4 pt-8 flex flex-col  ">
-                <h4 className="font-sans text-[#9393b6] pb-4">{card?.type}</h4>
+              <div className="p-4 flex flex-col  ">
+                <h4 className="font-sans mt-8 mb-2 xss:mb-0 xss:mt-5 text-[#9393b6] pb-3">
+                  {card?.type}
+                </h4>
 
-                <h1 className="text-2xl text-[#0B7077] font-sans font-bold h-18">
+                <h1 className="text-2xl text-[#0B7077] text-center flex justify-center items-center font-sans font-bold h-12 mb-4 xss:mb-2">
                   {card?.MainHead}
                 </h1>
 
-                <p className="text-sm font-sans text-justify  text-[#7b7b96] py-2 leading-normal">
+                <p className="text-sm font-sans text-justify text-[#7b7b96] py-2 leading-normal">
                   {card?.Discription}
                 </p>
 
@@ -122,42 +124,43 @@ const SlideSelection = () => {
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Curriculum</span>:
+                      <span className="font-bold">Curriculum</span>:{" "}
                       {card?.Curriculum}
                     </h6>
                   </div>
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Evaluation</span>:
+                      <span className="font-bold">Evaluation</span>:{" "}
                       {card?.Evaluation}
                     </h6>
                   </div>
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Support</span>:{card?.Support}
+                      <span className="font-bold">Support</span>:{" "}
+                      {card?.Support}
                     </h6>
                   </div>
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Projects</span>:
+                      <span className="font-bold">Projects</span>:{" "}
                       {card?.Projects}
                     </h6>
                   </div>
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Community Access</span>:
-                      {`card?.Community Access`}
+                      <span className="font-bold">Community Access</span>:{" "}
+                      {card?.CommunityAccess}
                     </h6>
                   </div>
 
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Placement</span>:
+                      <span className="font-bold">Placement</span>:{" "}
                       {card?.Placement}
                     </h6>
                   </div>
