@@ -67,7 +67,7 @@ const Testimonials = () => {
         </h1>
       </div>
 
-      <div className="w-full mt-24 relative overflow-hidden">
+      <div className="w-full mt-10 relative overflow-hidden">
         <Marquee
           speed={40}
           gradient={false}
@@ -78,7 +78,7 @@ const Testimonials = () => {
           {reviews.map((data, index) => (
             <div
               key={data.id}
-              className="w-[20rem] md:w-[32rem] mb-24 p-6 ml-20 flex flex-col gap-3 bg-white rounded-lg shadow-2xl"
+              className="w-[20rem] md:w-[32rem] mb-10 p-6 ml-20 flex flex-col gap-3 bg-white rounded-lg shadow-2xl"
               onMouseLeave={toggle}
             >
               <div className="text-amber-500 flex flex-col">
