@@ -55,19 +55,19 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="w-full flex mt-24 mb-10 flex-col justify-center bg-white">
+    <div className="w-full flex mt-10 flex-col justify-center bg-white">
       <div className="w-full">
         <div className="flex justify-center">
           <button className="bg-[#2F57EF] font-bold uppercase bg-opacity-[13%] text-[#2F57EF] px-5 py-2 rounded-3xl text-[16px]">
             Technology for All
           </button>
         </div>
-        <h1 className="text-center font-bold uppercase text-4xl md:text-5xl mt-5">
+        <h1 className="text-center font-bold uppercase text-2xl md:text-4xl mt-5">
           Embracing Continuous Learning <br /> and Growth with Cozmek
         </h1>
       </div>
 
-      <div className="w-full mt-24 relative overflow-hidden">
+      <div className="w-full mt-10 relative overflow-hidden">
         <Marquee
           speed={40}
           gradient={false}
@@ -78,7 +78,7 @@ const Testimonials = () => {
           {reviews.map((data, index) => (
             <div
               key={data.id}
-              className="max-w-lg mb-24 p-6 ml-20 flex flex-col gap-3 bg-white rounded-lg shadow-2xl"
+              className="w-[20rem] md:w-[32rem] mb-10 p-6 ml-20 flex flex-col gap-3 bg-white rounded-lg shadow-2xl"
               onMouseLeave={toggle}
             >
               <div className="text-amber-500 flex flex-col">

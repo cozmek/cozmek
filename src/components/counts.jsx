@@ -20,7 +20,7 @@ const Counts = () => {
         </div>
 
         <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20 lg:gap-32 2xl:gap-40">
-          <div className="w-1/2 md:w-1/5 text-center p-5 rounded shadow-2xl bg-white">
+          <div className="md:w-1/5 text-center p-5 rounded shadow-2xl bg-white">
             <div className="flex justify-center">
               <img src={students} alt="" />
             </div>
@@ -33,7 +33,7 @@ const Counts = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center mt-0 md:mt-32 p-5 rounded shadow-2xl bg-white">
+          <div className="md:w-1/5 text-center mt-0 md:mt-32 p-5 rounded shadow-2xl bg-white">
             <div className="flex justify-center">
               <img src={addon} alt="" />
             </div>
@@ -46,7 +46,7 @@ const Counts = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 md:w-1/5 text-center p-5 rounded shadow-2xl bg-white">
+          <div className="md:w-1/5 text-center p-5 rounded shadow-2xl bg-white">
             <div className="flex justify-center">
               <img src={workshop} alt="" />
             </div>

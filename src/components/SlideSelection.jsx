@@ -110,11 +110,11 @@ const SlideSelection = () => {
               <div className="p-4 pt-8 flex flex-col  ">
                 <h4 className="font-sans text-[#9393b6] pb-4">{card?.type}</h4>
 
-                <h1 className="text-2xl text-[#0B7077] font-sans font-bold ">
+                <h1 className="text-2xl text-[#0B7077] font-sans font-bold h-18">
                   {card?.MainHead}
                 </h1>
 
-                <p className="text-sm font-sans text-[#7b7b96] py-2 leading-normal">
+                <p className="text-sm font-sans text-justify  text-[#7b7b96] py-2 leading-normal">
                   {card?.Discription}
                 </p>
 
