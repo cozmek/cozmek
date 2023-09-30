@@ -73,8 +73,8 @@ const Footer = () => {
                   </svg>
                 </Typography>
                 <Typography
-                  as="a"
-                  href="#"
+                  as="a" target="_blank" rel="noopener noreferrer"
+                  href="https://instagram.com/cozmekofficial?igshid=MzRlODBiNWFlZA=="
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg

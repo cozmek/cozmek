@@ -2,7 +2,7 @@
 import youtubeLogo from "/src/assets/youtube.png";
 
 const youtube = () => {
-  const phoneNumber = "9061401943";
+  const phoneNumber = "918089991943";
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
   return (
     <>
@@ -19,10 +19,16 @@ const youtube = () => {
                 </h4>
               </div>
               <div className="xl:text-end text-center">
-                <button className="bg-[#0B7077] hover:bg-[#329aa1] rounded px-3 py-2 text-white">
-                  Subscribe
-                </button>
-              </div>
+  <a href="https://youtube.com/@JerryJohnAI?si=38YQH01z6vjKHlO2" target="_blank" rel="noopener noreferrer">
+    <button
+      className="bg-[#0B7077] hover:bg-[#329aa1] rounded px-3 py-2 text-white"
+    >
+      Subscribe
+    </button>
+  </a>
+</div>
+
+
             </div>
           </div>
         </div>
