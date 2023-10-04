@@ -15,8 +15,8 @@ let slide = [
     MainHead: "AI Crash Course Program (6 Months)",
     Discription:
       "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artifical Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
-    DiscountAmount: "15,000",
-    OriginalAmount: "25,000",
+    DiscountAmount: "7,500",
+    // OriginalAmount: "25,000",
     Curriculum: "Recorded Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certification",
     Support: "Personal Mentor",
@@ -32,8 +32,8 @@ let slide = [
     MainHead: "AI Expert Course Program (1 Year)",
     Discription:
       "Elevate your AI skills in our 1-year Expert Program. With a mix of recorded and live classes, hands-on assignments, and CRBS certifications, you'll tackle four impactful AI projects. Engage with our thriving AI community, participate in Hackathons, and receive specialized interview training for a successful career, all backed by our 100% Placement Assistance.",
-    DiscountAmount: "30,000",
-    OriginalAmount: "45,000",
+    DiscountAmount: "15,000",
+    // OriginalAmount: "45,000",
     Curriculum: "Recorded & Live Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certifications",
     Support: "Personal Mentor, Interview Training, Expert Talk Sessions",
@@ -172,7 +172,7 @@ const SlideSelection = () => {
                       ₹ {card?.DiscountAmount}
                     </h2>
                     <h2 className="line-through text-red-500 text-xs  xs:text-md xs1:text-xl">
-                      ₹ {card?.OriginalAmount}
+                      {card?.OriginalAmount}
                     </h2>
                   </div>
 

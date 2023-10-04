@@ -45,7 +45,7 @@ const slide = ({ card }) => {
               ₹ {card?.DiscountAmount}
             </h2>
             <h2 className="line-through text-red-500 text-[9px] xs:text-base xs1:text-base  md:text-xl ">
-              ₹ {card?.OriginalAmount}
+               {card?.OriginalAmount}
             </h2>
           </div>
           <button
