@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Left taglines */}
       <div className="md:w-1/2 w-full lg:ml-10 p-10 px-10 2xl:pl-36">
         <h1 className="p-3 bg-white inline-block mt-9">
-          🏆 AI: Shaping the Future of Our World
+          🏆 AI: Shaping the Future of Our World.
         </h1>
         <h1 className="pt-4 text-2xl xs:text-4xl md:text-6xl font-extrabold uppercase text-epilogue">
           Mastering the Future:
