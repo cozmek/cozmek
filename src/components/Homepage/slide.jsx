@@ -7,7 +7,7 @@ const slide = ({ card }) => {
     }
   };
   return (
-    <div className=" w-fit h-fit bg-white rounded-xl overflow-hidden border-2  relative ">
+    <div className="w-fit h-fit bg-white rounded-xl overflow-hidden border-2  relative ">
       <div>
         <img
           className="h-[11.8rem] w-[35rem]"

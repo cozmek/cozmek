@@ -1,5 +1,5 @@
 import Logo from "/src/assets/Logo_Cozmek_Black.png";
-
+import { Link } from "react-router-dom";
 const NavBar = () => {
   // Contact
   const handleContactClick = () => {
@@ -26,6 +26,7 @@ const NavBar = () => {
   return (
     <div className="flex-shrink-0 h-16 md:h-16 lg:h-16 shadow-lg flex items-center justify-between px-8 md:px-8 lg:px-14 text-black text-base md:text-lg lg:text-xl font-sans font-medium leading-6 tracking-tighter">
       <div className="flex gap-2 xs:gap-4 items-center md:justify-start justify-center ">
+        <Link to='/'>
         <div className="container flex items-center p-0 m-0 gap-2 md:mr-10">
           <img
             className="w-8 h-8 xs:w-8 sx:h-8 lg:w-10 lg:h-10 flex-shrink-0 hover:cursor-pointer"
@@ -35,6 +36,7 @@ const NavBar = () => {
             COZMEK
           </span>
         </div>
+        </Link>
         <div className="text-[14px]">
           <button className="uppercase" onClick={handleContactClick}>
             Contact

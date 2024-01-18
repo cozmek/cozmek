@@ -15,7 +15,7 @@ let slide = [
     MainHead: "AI Crash Course Program (6 Months)",
     Discription:
       "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artifical Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
-    DiscountAmount: "7,500",
+    DiscountAmount: "7,999",
     // OriginalAmount: "25,000",
     Curriculum: "Recorded Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certification",
@@ -32,7 +32,7 @@ let slide = [
     MainHead: "AI Expert Course Program (1 Year)",
     Discription:
       "Elevate your AI skills in our 1-year Expert Program. With a mix of recorded and live classes, hands-on assignments, and CRBS certifications, you'll tackle four impactful AI projects. Engage with our thriving AI community, participate in Hackathons, and receive specialized interview training for a successful career, all backed by our 100% Placement Assistance.",
-    DiscountAmount: "15,000",
+    DiscountAmount: "12,999",
     // OriginalAmount: "45,000",
     Curriculum: "Recorded & Live Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certifications",
@@ -45,19 +45,18 @@ let slide = [
     mainImage: AdvanceCardImg,
     roundImages: advancecardround,
     Project: "8",
-    type: "Advanced",
-    MainHead: "AI Job Guarantee Program with Internship (1 Year)",
-    Discription:
-      "Secure your AI career with our 1-year Job Guarantee Program. Enjoy recorded/live classes, assignments, CRBS certifications, and you'll tackle 8+ impactful AI projects. Engage in our AI community, Hackathons, and receive interview training, a 6-month internship, Money-Back Job Guarantee, and 100% Job Guarantee.",
-    DiscountAmount: "60,000",
-    OriginalAmount: "85,000",
-    Curriculum: "Recorded & Live Classes, Assignments, Practicals",
-    Evaluation: " Exams and CRBS Certifications",
+    type: "New",
+    MainHead: "60-Hour Python for AI",
+    Discription:"Structured to include modules on basic and advanced Python, essential for AI development. Key features encompass video tutorials and mentoring sessions conducted entirely in Malayalam, assignments for practical learning, live doubt-clearing sessions, and comprehensive tests at both basic and advanced levels",
+    DiscountAmount: "2,999",
+    //OriginalAmount: "85,000",
+    Curriculum: "Recorded Classes",
+    Evaluation: "Exams and Evaluations",
     Support:
-      " Personal Mentor, Interview Training, Talk Sessions, Resume Preparation, Individual Doubt Clearing",
-    Projects: "8+ Real-World Projects",
+      "Mentoring, LIfetime Access, Talk Sessions, Live Doubt Clearing",
+    Projects: "AI Related Projects",
     CommunityAccess: "AI Community, Free Hackathon Entry",
-    Placement: "100% Job Guarantee, 6-Month Internship",
+    Placement: "Placement Assistance",
   },
 ];
 
@@ -80,7 +79,7 @@ const SlideSelection = () => {
               key={index}
               className=" max-w-[32rem] min-h-[720px] xl:h-[750px]  container  bg-[#FAFAFA] rounded-xl overflow-hidden border-2  relative"
               style={{
-                flexShrink: 0, // Prevent flex-shrinking
+                flexShrink: 0,
               }}
             >
               <div>

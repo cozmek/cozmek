@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import animationData from "../assets/AboutUs_animation.json";
+import animationData from "../../assets/AboutUs_animation.json";
 import Tick from "/src/assets/ticMark.png";
 import { useRef } from "react";
 

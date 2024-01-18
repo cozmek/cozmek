@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       id: 2,
       value: 4,
-      text: " The offline add-on course for python-AI by the COZMEK team is so good. As a student, I am very happy. The sir who is teaching us is very supportive and he explains very well and gives better examples so that we can understand it very well",
+      text: "The offline add-on course for python-AI by the COZMEK team is so good. As a student, I am very happy. The sir who is teaching us is very supportive and he explains very well and gives better examples so that we can understand it very well",
       name: "Henry Augustine",
       position: "Dist Angamaly 2nd Year Student",
     },

@@ -1,6 +1,6 @@
 import { useState, useRef } from "react"; 
 import Lottie from "react-lottie";
-import animationData from "../assets/contactus_animation.json";
+import animationData from "../../assets/contactus_animation.json";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
