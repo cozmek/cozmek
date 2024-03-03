@@ -1,6 +1,6 @@
 import HeroSection from "../../components/Homepage/heroSection";
 import AboutUs from "../../components/Homepage/aboutUs";
-import ExamResult from "../../components/Homepage/examResult";
+// import ExamResult from "../../components/Homepage/examResult";
 import SlideSelection from "../../components/Homepage/SlideSelection";
 import Whatyouwillget from "../../components/Homepage/whatyouwillget";
 import Youtube from "../../components/Homepage/youtube";
@@ -15,7 +15,7 @@ const Home = () => {
       <HeroSection />
       <AboutUs />
       <SlideSelection />
-      <ExamResult />
+      {/* <ExamResult/ /> */}
       <Whatyouwillget />
       <WorkingWith />
       <Youtube />

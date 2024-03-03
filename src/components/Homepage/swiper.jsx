@@ -17,34 +17,23 @@ let card = [
     mainImage: BasicCardimg,
     roundImages: basiccard,
     Project: "2",
-    type: "Basic",
-    MainHead: "AI Crash Course Program (6 Months)",
+    type: "Premium",
+    MainHead: "Data Science and Machine Learning",
     Discription:
-      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artificial Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
-    DiscountAmount: "7,999",
+      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artificial Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
+    DiscountAmount: "20,000",
     // OriginalAmount: "25,000",
   },
   {
     mainImage: InterMediateCardimg,
     roundImages: Intermediatecard,
     Project: "4",
-    type: "Intermediate",
-    MainHead: "AI Expert Course Program (1 Year)",
+    type: "Premium",
+    MainHead: "Python Program",
     Discription:
       "Elevate your AI skills in our 1-year Expert Program. With a mix of recorded and live classes, hands-on assignments, and CRBS certifications, you'll tackle four impactful AI projects. Engage with our thriving AI community, participate in Hackathons, and receive specialized interview training for a successful career, all backed by our 100% Placement Assistance.",
-    DiscountAmount: "12,999",
-    // OriginalAmount: "45,000",
-  },
-  {
-    mainImage: AdvanceCardImg,
-    roundImages: advancedcard,
-    Project: "8",
-    type: "New",
-    MainHead: "60-Hour Python for AI",
-    Discription:
-      "Structured to include modules on basic and advanced Python, essential for AI development. Key features encompass video tutorials and mentoring sessions conducted entirely in Malayalam, assignments for practical learning, live doubt-clearing sessions, and comprehensive tests at both basic and advanced levels",
     DiscountAmount: "2,999",
-    //OriginalAmount: "85,000",
+    // OriginalAmount: "45,000",
   },
 ];
 

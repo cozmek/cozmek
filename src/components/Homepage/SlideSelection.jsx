@@ -1,9 +1,8 @@
+/* eslint-disable no-dupe-keys */
 import BasicCardimg from "/src/assets/BasicCardimg.png";
 import basiccard from "/src/assets/basic card.png";
 import InterMediateCardimg from "/src/assets/InterMediateCardimg.png";
 import Intermediatecard from "/src/assets/Intermediate card.png";
-import AdvanceCardImg from "/src/assets/AdvanceCardImg.jpeg";
-import advancecardround from "/src/assets/advanced card.png";
 import ticMark from "/src/assets/ticMark.png";
 import { useRef } from "react";
 let slide = [
@@ -11,53 +10,36 @@ let slide = [
     mainImage: BasicCardimg,
     roundImages: basiccard,
     Project: "2",
-    type: "Basic",
-    MainHead: "AI Crash Course Program (6 Months)",
+    type: "Premium",
+    MainHead: "Data Science and Machine Learning",
     Discription:
-      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artifical Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in two real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
-    DiscountAmount: "7,999",
+      "Embark on your AI journey with our Crash Program. Dive into the world of Artifical Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
+    DiscountAmount: "20,000",
     // OriginalAmount: "25,000",
-    Curriculum: "Recorded Classes, Assignments, Practicals",
+    Curriculum: "Live & Recorded Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certification",
-    Support: "Personal Mentor",
-    Projects: "2 Real-World Projects",
-    CommunityAccess: "AI Community",
+    Assistance: "Mentoring",
+    Projects: "Real-World Projects",
+    Support: "Live Doubt Clearning Session",
     Placement: "100% Placement Assistance",
   },
   {
     mainImage: InterMediateCardimg,
     roundImages: Intermediatecard,
     Project: "4",
-    type: "Intermediate",
-    MainHead: "AI Expert Course Program (1 Year)",
+    type: "Premium",
+    MainHead: "Python Program",
     Discription:
       "Elevate your AI skills in our 1-year Expert Program. With a mix of recorded and live classes, hands-on assignments, and CRBS certifications, you'll tackle four impactful AI projects. Engage with our thriving AI community, participate in Hackathons, and receive specialized interview training for a successful career, all backed by our 100% Placement Assistance.",
-    DiscountAmount: "12,999",
+    DiscountAmount: "2,999",
     // OriginalAmount: "45,000",
     Curriculum: "Recorded & Live Classes, Assignments, Practicals",
     Evaluation: "Exams and CRBS Certifications",
-    Support: "Personal Mentor, Interview Training, Expert Talk Sessions",
-    Projects: "4 Real-World Projects",
-    CommunityAccess: "AI Community, Free Hackathon Entry",
+    Assistance: "Mentoring",
+    Projects: "Real-World Projects",
+    Support: "AI Community, Free Hackathon Entry",
     Placement: "100% Placement Assistance",
-  },
-  {
-    mainImage: AdvanceCardImg,
-    roundImages: advancecardround,
-    Project: "8",
-    type: "New",
-    MainHead: "60-Hour Python for AI",
-    Discription:"Structured to include modules on basic and advanced Python, essential for AI development. Key features encompass video tutorials and mentoring sessions conducted entirely in Malayalam, assignments for practical learning, live doubt-clearing sessions, and comprehensive tests at both basic and advanced levels",
-    DiscountAmount: "2,999",
-    //OriginalAmount: "85,000",
-    Curriculum: "Recorded Classes",
-    Evaluation: "Exams and Evaluations",
-    Support:
-      "Mentoring, LIfetime Access, Talk Sessions, Live Doubt Clearing",
-    Projects: "AI Related Projects",
-    CommunityAccess: "AI Community, Free Hackathon Entry",
-    Placement: "Placement Assistance",
-  },
+  }
 ];
 
 // Register
@@ -137,8 +119,8 @@ const SlideSelection = () => {
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Support</span>:{" "}
-                      {card?.Support}
+                      <span className="font-bold">Assistance</span>:{" "}
+                      {card?.Assistance}
                     </h6>
                   </div>
                   <div className="flex items-center py-1">
@@ -151,8 +133,8 @@ const SlideSelection = () => {
                   <div className="flex items-center py-1">
                     <img src={ticMark} className="w-6 mr-2 inline" alt="." />
                     <h6 className="text-base">
-                      <span className="font-bold">Community Access</span>:{" "}
-                      {card?.CommunityAccess}
+                      <span className="font-bold">Support</span>:{" "}
+                      {card?.Support}
                     </h6>
                   </div>
 
