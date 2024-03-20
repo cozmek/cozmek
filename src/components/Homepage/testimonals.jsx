@@ -39,6 +39,27 @@ const Testimonials = () => {
       name: "Vyshnavi Viswambaran",
       position: "Dist Angamaly 2nd Year Student",
     },
+    {
+      id: 6,
+      value: 5,
+      text: "I recently completed a 6-month course on Python and Data Science Basics by Cozmek Pvt Ltd, and it was really rewarding. The teachers explained everything really well and made sure we understood. I liked that we got to do hands-on projects and assignments too, which made learning even more interesting. Overall, I'd totally recommend this course to anyone who wants to learn about programming and data science – it's been a great experience!",
+      name: "Mohamed yasen",
+      position: "Dist Angamaly 2nd Year Student",
+    },
+    {
+      id: 7,
+      value: 5,
+      text: "It was a wonderful session by Cozmek on the importance of Python and data science. They have been teaching about the major trending concepts in artificial intelligence and also on the topic of data science with machine learning. We will not get bored because they train us through practical sessions on how an employee works in an IT company. To stay on track, they will give us assignments on the topics taught. That's the way to keep us on track. I really liked their sessions. It's a worthwhile class for me.",
+      name: "Ajal PP",
+      position: "Dist Angamaly 2nd Year Student",
+    },
+    {
+      id: 5,
+      value: 5,
+      text: "Cozmek Pvt Ltd's teaching method for the Python and Data Science Basic course provides clear instruction and practical exercises. The structured presentation of concepts facilitates understanding, and the inclusion of real-world examples relevant to our industry adds value to the learning experience. While the instructors demonstrate reasonable expertise, injecting a bit more enthusiasm into their delivery could enhance engagement. Overall, the course offers a solid foundation in Python programming and data science basics, with room for further improvement to make it even more impactful.",
+      name: "Mathews Paul",
+      position: "Dist Angamaly 2nd Year Student",
+    },
   ];
   const [showMoreStates, setShowMoreStates] = useState(
     reviews.map(() => false)
