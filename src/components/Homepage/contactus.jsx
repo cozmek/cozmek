@@ -1,4 +1,4 @@
-import { useState, useRef } from "react"; 
+import { useState, useRef } from "react";
 import Lottie from "react-lottie";
 import animationData from "../../assets/contactus_animation.json";
 import { ToastContainer, toast } from "react-toastify";
@@ -148,9 +148,8 @@ const Contactus = () => {
                     <div className="mb-4">
                       <label className="text-black">E-MAIL</label>
                       <input
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                          errors.Email && "border-red-500"
-                        }`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.Email && "border-red-500"
+                          }`}
                         id="username"
                         type="email"
                         name="Email"
@@ -173,9 +172,8 @@ const Contactus = () => {
                     <div className="mb-4">
                       <label className="text-black">FULL NAME</label>
                       <input
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                          errors.FullName && "border-red-500"
-                        }`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.FullName && "border-red-500"
+                          }`}
                         id="username"
                         type="text"
                         name="FullName"
@@ -198,9 +196,8 @@ const Contactus = () => {
                     <div className="mb-4">
                       <label className="text-black">COURSE</label>
                       <select
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                          errors.Coures && "border-red-500"
-                        }`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.Coures && "border-red-500"
+                          }`}
                         id="course"
                         name="Coures"
                         onChange={(e) => {
@@ -214,13 +211,10 @@ const Contactus = () => {
                       >
                         <option value="">Select a course</option>
                         <option value="AI Crash Course Programe (6-Months)">
-                          AI Crash Course Programe (6-Months)
+                          Data Science and Machine Learning
                         </option>
                         <option value="AI Expert Course Programe (1-Year)">
-                          AI Expert Course Programe (1-Year)
-                        </option>
-                        <option value="AI Job Guarantee Programe with Internship (1-Year)">
-                          AI Job Guarantee Programe with Internship (1-Year)
+                          Python Program
                         </option>
                       </select>
                       {errors.Coures && (
@@ -232,9 +226,8 @@ const Contactus = () => {
                     <div className="mb-4">
                       <label className="text-black">PHONE NUMBER</label>
                       <input
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
-                          errors.PhoneNumber && "border-red-500"
-                        }`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.PhoneNumber && "border-red-500"
+                          }`}
                         id="username"
                         type="number"
                         placeholder="000 0000 0000"
@@ -267,7 +260,7 @@ const Contactus = () => {
                       </button>
                     </div>
                   </form>
-                  <ToastContainer/>
+                  <ToastContainer />
                 </div>
               </div>
             </div>
