@@ -20,7 +20,7 @@ let card = [
     type: "Premium",
     MainHead: "Data Science and Machine Learning",
     Discription:
-      "Embark on your AI journey with our 6-month Crash Program. Dive into the world of Artificial Intelligence through expertly curated content, assignments, practical sessions, and rigorous exams. Achieve industry-recognized certifications, guided by a personal mentor. Engage in real-world AI projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance.",
+      "Embark on your journey into Data Science and Machine Learning with our 6-month Crash Program. Immerse yourself in the realms of data analysis, machine learning algorithms, and predictive modeling through expertly curated content, assignments, practical sessions, and rigorous exams. Earn Amarican board of education and Cozmek rank board certification, guided by a personal mentor. Engage in real-world data science projects, access our vibrant AI community, and rest assured with our 100% Placement Assistance guarantee.",
     DiscountAmount: "20,000",
     // OriginalAmount: "25,000",
   },
@@ -31,7 +31,7 @@ let card = [
     type: "Premium",
     MainHead: "Python Program",
     Discription:
-      "Elevate your AI skills in our 1-year Expert Program. With a mix of recorded and live classes, hands-on assignments, and CRBS certifications, you'll tackle four impactful AI projects. Engage with our thriving AI community, participate in Hackathons, and receive specialized interview training for a successful career, all backed by our 100% Placement Assistance.",
+      "Enhance your Python skills in our 2-month Python Program. With a blend of recorded and live classes, hands-on assignments, and CRBS certifications, you'll master Python fundamentals and advanced concepts. Dive into four comprehensive Python projects to solidify your understanding. Engage with our dynamic Python community, participate in coding challenges, and receive specialized interview preparation for a successful career, all supported by our 100% Placement Assistance guarantee.",
     DiscountAmount: "2,999",
     // OriginalAmount: "45,000",
   },
