@@ -12,7 +12,8 @@ export default {
       "2xl": "1440px", // 2 Extra large screens and up
 
       //addons
-      xss: "350px",
+      "xs1": "350px",
+      "sm1": "488px",
     },
   },
   plugins: [],

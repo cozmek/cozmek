@@ -1,5 +1,7 @@
-import Logo from "/src/assets/Logo_Cozmek_Black.png";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "/src/assets/Logo_Cozmek_Black.png";
+
 const NavBar = () => {
   // Contact
   const handleContactClick = () => {
@@ -23,40 +25,93 @@ const NavBar = () => {
     }
   };
 
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <div className="flex-shrink-0 h-16 md:h-16 lg:h-16 shadow-lg flex items-center justify-between px-8 md:px-8 lg:px-14 text-black text-base md:text-lg lg:text-xl font-sans font-medium leading-6 tracking-tighter">
-      <div className="flex gap-2 xs:gap-4 items-center md:justify-start justify-center ">
-        <Link to='/'>
-        <div className="container flex items-center p-0 m-0 gap-2 md:mr-10">
-          <img
-            className="w-8 h-8 xs:w-8 sx:h-8 lg:w-10 lg:h-10 flex-shrink-0 hover:cursor-pointer"
-            src={Logo}
-          />
-          <span className="hidden md:inline uppercase font-bold text-xl lg:text-2xl">
-            COZMEK
-          </span>
+    <>
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between md:w-auto md:static md:block md:justify-start">
+            <Link to="/">
+              <div className="container flex items-center gap-2">
+                <img
+                  className="w-8 h-8 xs:w-8 sx:h-8 lg:w-10 lg:h-10 flex-shrink-0 hover:cursor-pointer"
+                  src={Logo}
+                  alt="Logo"
+                />
+                <div className="flex flex-col">
+                  <span className=" uppercase font-bold text-lg">
+                    COZMEK pvt ltd
+                  </span>
+                  <span className=" text-xs -mt-2">Unlock the power of AI</span>
+                </div>
+              </div>
+            </Link>
+            <button
+              className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block md:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {navbarOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+          <div
+            className={
+              "md:flex flex-grow items-center  md:mt-0 mt-5" +
+              (navbarOpen ? " flex" : " hidden")
+            }
+            id="example-navbar-danger"
+          >
+            <div className="flex flex-col gap-5 md:flex-row md:items-center list-none md:ml-auto">
+              <div className="text-[14px]">
+                <button className="uppercase" onClick={handleContactClick}>
+                  Contact
+                </button>
+              </div>
+              <div className="text-[14px]">
+                <button className="uppercase" onClick={handleAboutClick}>
+                  About
+                </button>
+              </div>
+              <div className="text-[14px]">
+                <button className="uppercase" onClick={handleRegisterClick}>
+                  Achievements
+                </button>
+              </div>
+              <div className="text-[14px]">
+                <button
+                  className="uppercase text-xs animate-pulse font-semibold text-center border border-[#33A1B0] text-[#33A1B0] py-2 px-3 rounded-lg cursor-pointer hover:border-[#2a8692]"
+                  onClick={handleRegisterClick}
+                >
+                  Book your slot
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        </Link>
-        <div className="text-[14px]">
-          <button className="uppercase" onClick={handleContactClick}>
-            Contact
-          </button>
-        </div>
-        <div className="text-[14px]">
-          <button className="uppercase" onClick={handleAboutClick}>
-            About
-          </button>
-        </div>
-        <div className="text-[14px]">
-          <button className="uppercase" onClick={handleRegisterClick}>
-            Register
-          </button>
-        </div>
-      </div>
-      <div className="hidden md:block">
-        <h1>Welcome You !...</h1>
-      </div>
-    </div>
+      </nav>
+    </>
   );
 };
 

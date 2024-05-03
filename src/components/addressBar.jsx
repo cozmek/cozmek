@@ -1,17 +1,19 @@
-const addressBar = () => {
+const AddressBar = () => {
   return (
-    <div className="h-6 md:h-8 lg:h-8  xs:text-[0.6rem] md:text-[0.8rem] 2xl:text-[1rem] text-[8px] bg-[#33A1B0] flex md:gap-4 gap-2  text-white font-montserrat  font-medium  leading-6 tracking-wider items-center justify-center md:justify-center  lg:justify-end pe-4">
-      <div>
-        <span className="hidden md:inline-block">Email:</span>{" "}
-        <a href="mailto:cozmekinfo@gmail.com">cozmekinfo@gmail.com</a>
-      </div>
-      <div>
-        <span className="hidden md:inline-block ">Phone:</span>
-        <a href="tel:+919061401943">+919061401943</a>,{" "}
-        <a href="tel:+917510747180">+917510747180</a>
+    <div className="w-full bg-[#33A1B0] flex 2xl:justify-center md:justify-end justify-center">
+    <div className="flex xs1:flex-row flex-col items-center justify-center md:justify-end xs1:gap-2 text-xs md:text-sm text-white py-2  px-4 w-auto 2xl:w-[1440px]">
+         <div>
+          <span className="hidden md:inline-block">Email:</span>{" "}
+          <a href="mailto:cozmekinfo@gmail.com">cozmekinfo@gmail.com</a>
+        </div>
+        <div>
+          <span className="hidden md:inline-block">Phone:</span>{" "}
+          <a href="tel:+918921216142">+918921216142</a>,{" "}
+          <a href="tel:+918089991943">+918089991943</a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default addressBar;
+export default AddressBar;

@@ -19,6 +19,7 @@ import imglogo13 from "/src/assets/workwith1.png";
 import imglogo14 from "/src/assets/workwith2.png";
 import imglogo15 from "/src/assets/workwith3.png";
 import imglogo16 from "/src/assets/workwith4.png";
+import imglogo17 from "/src/assets/workwith8.png";
 
 const logo = [
   imglogo1,
@@ -37,6 +38,7 @@ const logo = [
   imglogo14,
   imglogo15,
   imglogo16,
+  imglogo17
 ];
 // Import Swiper styles
 
@@ -69,15 +71,15 @@ const WorkingWith = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
+    return () => {                                                                                                                                                                        
+      
     };
   }, []);
 
   return (
-    <div className="w-100% h-auto bg-[#F7F7FA]">
+    <div className="w-100% h-auto bg-[#c8c8c9] py-10">
       <div className="md:flex">
-        <div className="text-xl py-10 md:text-2xl px-10 md:w-3/4">
+        <div className="text-xl md:text-2xl px-10 md:w-3/4">
           <h2>
             Meet the People build there career with AI; Artifical Intelligence
           </h2>
