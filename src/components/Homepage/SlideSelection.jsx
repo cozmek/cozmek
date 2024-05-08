@@ -11,8 +11,8 @@ let slide = [
     MainHead: "Artificial intelligence and Machine learning",
     Discription:
     "Embark on a 6-month Crash Program in Data Science and Machine Learning. Dive deep into data analysis, ML algorithms, and earn certifications, guided by a mentor, with real-world projects and 100% Placement Assistance.",
-   DiscountAmount: "20,000",
-    OriginalAmount: "25,000",
+   DiscountAmount: "25,000",
+    OriginalAmount: "28,000",
     Duration: "6 months",
     Certificate: "CRBC, ABE",
     Curriculum: "Live and recorded classes",
