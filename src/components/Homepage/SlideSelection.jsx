@@ -25,7 +25,7 @@ let slide = [
     Discription:
     "Elevate Python skills in our 2-month program with live & recorded classes, hands-on assignments, CRBS certifications. Master fundamentals, advanced concepts, and projects. Get interview prep, backed by 100% Placement Assistance.",
   DiscountAmount: "2,999",
-    OriginalAmount: "3,000",
+    OriginalAmount: "4,000",
     Duration: "2 months",
     Certificate: "CRBC",
     Curriculum: "Live and recorded classes",
@@ -57,7 +57,7 @@ const handleRegisterClick = () => {
 const SlideSelection = () => {
   const programeRef = useRef();
   return (
-    <div id="programe" ref={programeRef}>
+    <div id="programe" ref={programeRef} className="dvh">
       <div className="flex-wrap w-auto h-auto px-3 gap-5 flex items-center justify-center md:mt-20 mt-10">
         {slide.map((card, index) => {
           return (
