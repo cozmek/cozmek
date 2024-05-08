@@ -23,8 +23,8 @@ const cards = [
     Certificate: "CRBC, ABE",
     Curriculum: "Live and recorded classes",
     Support: "100% placement assistance and personal mentor",
-    DiscountAmount: "20,000",
-    OriginalAmount: "25,000",
+    DiscountAmount: "25,000",
+    OriginalAmount: "28,000",
   },
   {
     mainImage: c2,
