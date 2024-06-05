@@ -81,7 +81,7 @@ const WorkingWith = () => {
       <div className="md:flex">
         <div className="text-xl md:text-2xl px-10 md:w-3/4">
           <h2>
-            Meet the People build there career with AI; Artifical Intelligence
+            Meet the People build there career with AI: Artifical Intelligence
           </h2>
           <h1 className="font-bold">Who are Working With</h1>
         </div>

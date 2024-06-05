@@ -1,4 +1,3 @@
-import Whatyouwillget from "/src/assets/Whatyouwillget.png";
 import TickSqr from "/src/assets/Tick Square.png";
 let points = [
   "Online and Offline Sections",
@@ -11,10 +10,10 @@ let popins = {
 };
 const whatyouwillget = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center mx-3 my-4 mt-10 md:mt-20 mb-20">
-      <div className=" w-1/2 md:mt-0 mt-10 ml-10 md:ml-0 lg:p-6 xl:px-[6rem] ">
+    <div className="flex flex-col md:flex-row items-center justify-center mt-10 md:mt-20 mb-20 px-5">
+      <div className="md:mt-0 mt-10 md:ml-0 md:w-1/2 w-full">
         <h1
-          className="text-2xl md:text-4xl md:font-bold text-center py-4 text-[#393939]"
+          className="text-2xl md:text-4xl md:font-bold text-center text-[#393939]"
           style={popins}
         >
           What Will You <span className="text-[#0B7077]">Get</span>?
@@ -40,7 +39,7 @@ const whatyouwillget = () => {
                 <div>
                   <img
                     src={TickSqr}
-                    className="inline pr-5"
+                    className="inline pr-5 w-14"
                     alt="Tick square"
                   />
                 </div>

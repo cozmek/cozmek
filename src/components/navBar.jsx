@@ -94,11 +94,13 @@ const NavBar = () => {
                   About
                 </button>
               </div>
+              <Link to='/achievements'>
               <div className="text-[14px]">
-                <button className="uppercase" onClick={handleRegisterClick}>
+                <button className="uppercase">
                   Achievements
                 </button>
               </div>
+              </Link>
               <div className="text-[14px]">
                 <button
                   className="uppercase text-xs animate-pulse font-semibold text-center border border-[#33A1B0] text-[#33A1B0] py-2 px-3 rounded-lg cursor-pointer hover:border-[#2a8692]"

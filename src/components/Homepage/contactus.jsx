@@ -99,19 +99,19 @@ const Contactus = () => {
   return (
     <div id="register" ref={registerRef}>
       <div
-        className="bg-[#0B7077] bg-opacity-[63%] flex justify-center items-center"
+        className="bg-[#0B7077] bg-opacity-[63%] flex justify-center items-center py-5"
         id="contactUs"
       >
-        <div className="w-full lg:w-[90%] lg:flex text-[#FFFFFF]">
+        <div className="lg:flex text-[#FFFFFF]">
           {/* Left Img */}
           <div className="lg:w-1/2 flex items-center justify-center">
-            <div className="w-1/2 lg:w-full">
+            <div className="md:w-[50rem]">
               <Lottie options={defaultOptions} height="auto" width="90%" />
             </div>
           </div>
 
           {/* Right Form */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center p-3">
+          <div className="flex items-center justify-center p-3">
             <div className="flex flex-col gap-5 items-center">
               <div className="flex justify-center">
                 <button className="bg-[#FFFFFF] bg-opacity-[13%] px-5 py-2 rounded-3xl text-[16px]">

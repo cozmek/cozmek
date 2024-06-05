@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 
 // addon routes
 import Home from "./Pages/HomePage/home";
-import ExamResults from "./Pages/ExamResults/examResults";
+import Downldbrochure from "./Pages/page1/downldbrochure";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/examresults" element={<ExamResults />} />
+        <Route path="/achievements" element={<Downldbrochure />} />
       </Routes>
       <Footer />
     </Router>

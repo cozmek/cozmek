@@ -13,7 +13,7 @@ const HeroSection = () => {
     <>
       <div className="w-auto custom-gradient">
         <div className=" flex justify-center items-center">
-          <div className="h-auto flex flex-col md:flex-row font-medium 2xl:w-[1440px] w-auto px-5  text-[#192335CC] ">
+          <div className="h-auto flex flex-col md:flex-row font-medium 2xl:w-[1440px] w-auto px-5 justify-center text-[#192335CC] ">
             {/* Left taglines */}
             <div className="md:w-1/2 w-full flex flex-col justify-center p-5">
               <h1 className="p-3 w-1/2 bg-white inline-block md:text-base text-xs">
@@ -46,7 +46,7 @@ const HeroSection = () => {
               </button>
             </div>
             {/* Right Slider */}
-            <div className="w-auto md:w-1/2 sm:py-10 box-border py-4 px-2 xs1:px-6 ">
+            <div className="w-auto sm:py-10 box-border py-4 px-2 xs1:px-6 ">
               <div className="flex justify-center box-content">
                 <YourComponent />
               </div>
