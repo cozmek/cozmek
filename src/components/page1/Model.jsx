@@ -2,6 +2,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import pdffile from "../../assets/COZMEK.pdf";
 
 const Modal = ({ showModal, setShowModal }) => {
   const formik = useFormik({
@@ -44,7 +45,7 @@ const Modal = ({ showModal, setShowModal }) => {
   });
 
   const downloadPDF = () => {
-    const pdfUrl = "/src/assets/COZMEK.pdf";
+    const pdfUrl = pdffile;
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.setAttribute("download", "brochure.pdf");
