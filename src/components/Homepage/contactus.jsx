@@ -211,7 +211,7 @@ const Contactus = () => {
                       >
                         <option value="">Select a course</option>
                         <option value="AI Crash Course Programe (6-Months)">
-                          Data Science and Machine Learning
+                        Artificial intelligence and Machine learning
                         </option>
                         <option value="AI Expert Course Programe (1-Year)">
                           Python Program
