@@ -61,7 +61,8 @@ const Footer = () => {
               <div className="flex gap-4 text-blue-gray-900 mt-5">
                 <Typography
                   as="a"
-                  href="#"
+                  target="_blank"
+                  href="https://www.facebook.com/share/5WhNxYR8YTJ7DQBW/?mibextid=qi2Omg"
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
@@ -91,7 +92,8 @@ const Footer = () => {
                 </Typography>
                 <Typography
                   as="a"
-                  href="#"
+                  target="_blank"
+                  href="https://x.com/Cozmekofficial?t=cJI-NYxp2SJjKodiZbi79w&s=08"
                   className="opacity-80 transition-opacity hover:opacity-100"
                 >
                   <svg
