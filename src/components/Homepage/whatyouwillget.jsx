@@ -1,6 +1,6 @@
 import TickSqr from "/src/assets/Tick Square.png";
 let points = [
-  "Online and Offline Sections",
+  "Online and Offline Sessions",
   "Placement Assistance and Gurantee",
   "Exploring through wide range of TECHNOLOGIES",
 ];

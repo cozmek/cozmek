@@ -23,8 +23,8 @@ const cards = [
     Certificate: "CRBC, ABE",
     Curriculum: "Live and recorded classes",
     Support: "100% placement assistance and personal mentor",
-    DiscountAmount: "25,000",
-    OriginalAmount: "28,000",
+    DiscountAmount: "30,000",
+    OriginalAmount: "35,000",
   },
   {
     mainImage: c2,
@@ -34,19 +34,8 @@ const cards = [
     Certificate: "CRBC",
     Curriculum: "Live and recorded classes",
     Support: "100% placement assistance and personal mentor",
-    DiscountAmount: "2,999",
-    OriginalAmount: "4,000",
-  },
-  {
-    mainImage: c3,
-    type: "Offline",
-    MainHead: "International diploma in Artificial intelligence",
-    Duration: "6 months",
-    Certificate: "CRBC, ABE",
-    Curriculum: "Live and recorded classes",
-    Support: "100% placement assistance and personal mentor",
-    DiscountAmount: "40,000",
-    OriginalAmount: "45,000",
+    DiscountAmount: "5,000",
+    OriginalAmount: "6,000",
   },
 ];
 
