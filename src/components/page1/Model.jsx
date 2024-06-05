@@ -3,6 +3,8 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import pdffile from "../../assets/COZMEK.pdf";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Modal = ({ showModal, setShowModal }) => {
   const formik = useFormik({
@@ -36,7 +38,7 @@ const Modal = ({ showModal, setShowModal }) => {
         }
       )
         .then(() => {
-          alert("Registeration Completed");
+          toast.success("Brochure download started");
         })
         .catch((err) => {
           alert(err);
@@ -162,6 +164,7 @@ const Modal = ({ showModal, setShowModal }) => {
                     </button>
                   </div>
                 </form>
+                <ToastContainer />
               </div>
             </div>
           </div>
