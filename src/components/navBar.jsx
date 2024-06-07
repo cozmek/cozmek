@@ -97,7 +97,7 @@ const NavBar = () => {
               <Link to='/achievements'>
               <div className="text-[14px]">
                 <button className="uppercase">
-                  Achievements
+                  Course details
                 </button>
               </div>
               </Link>

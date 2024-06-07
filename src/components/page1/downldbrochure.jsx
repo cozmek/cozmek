@@ -12,7 +12,7 @@ const examResults = () => {
         <div className="xl:w-1/2 w-full p-10 px-10 flex justify-center flex-col items-center">
           <div className="xl:ml-14">
             <h1 className="pt-4 text-xl xs:text-2xl md:text-4xl font-extrabold uppercase text-epilogue">
-              DOWNLOAD OUR LATEST BROCHURE
+              LATEST COURSE DETAILS
             </h1>
             <span
               className="text-lg xs:text-xl md:text-3xl font-normal uppercase text-epilogue"
