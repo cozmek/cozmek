@@ -13,7 +13,7 @@ let slide = [
     "Embark on a 6-month Crash Program in Data Science and Machine Learning. Dive deep into data analysis, ML algorithms, and earn certifications, guided by a mentor, with real-world projects and 100% Placement Assistance.",
    DiscountAmount: "30,000",
     OriginalAmount: "35,000",
-    Duration: "6 months",
+    Duration: "8 months",
     Certificate: "CRBC, ABE",
     Curriculum: "Live and recorded classes",
     Support: "100% placement assistance and personal mentor",

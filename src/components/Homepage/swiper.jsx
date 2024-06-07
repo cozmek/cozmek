@@ -19,7 +19,7 @@ const cards = [
     mainImage: c1,
     type: "Online",
     MainHead: "Artificial intelligence and Machine learning",
-    Duration: "6 months",
+    Duration: "8 months",
     Certificate: "CRBC, ABE",
     Curriculum: "Live and recorded classes",
     Support: "100% placement assistance and personal mentor",
