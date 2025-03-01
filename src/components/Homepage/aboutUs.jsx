@@ -1,4 +1,4 @@
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../../assets/AboutUs_animation.json";
 import Tick from "/src/assets/ticMark.png";
 import { useRef } from "react";
@@ -14,20 +14,16 @@ const list = [
 ];
 
 const AboutUs = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   const aboutRef = useRef();
   return (
     <div id="about" ref={aboutRef}>
       <div className="flex flex-col md:flex-row items-center justify-center p-4">
         <div className="md:w-1/2 w-full mb-4 sm:mb-0">
-          <Lottie options={defaultOptions} height="auto" width="90%" />
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            style={{ width: "90%", height: "auto" }}
+          />
         </div>
         <div className="md:w-1/2 w-full px-4">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-[#192335] opacity-90">
