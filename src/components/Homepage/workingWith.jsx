@@ -1,25 +1,25 @@
 import { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import LeftArrow from "/src/assets/left-arrow-.png";
-import RightArrow from "/src/assets/right-arrow-6421.png";
-import imglogo1 from "/src/assets/workwith1.png";
-import imglogo2 from "/src/assets/workwith2.png";
-import imglogo3 from "/src/assets/workwith3.png";
-import imglogo4 from "/src/assets/workwith4.png";
-import imglogo5 from "/src/assets/workwith5.png";
-import imglogo6 from "/src/assets/workwith6.png";
-import imglogo7 from "/src/assets/workwith1.png";
-import imglogo8 from "/src/assets/workwith2.png";
-import imglogo9 from "/src/assets/workwith3.png";
-import imglogo10 from "/src/assets/workwith4.png";
-import imglogo11 from "/src/assets/workwith5.png";
-import imglogo12 from "/src/assets/workwith6.png";
-import imglogo13 from "/src/assets/workwith1.png";
-import imglogo14 from "/src/assets/workwith2.png";
-import imglogo15 from "/src/assets/workwith3.png";
-import imglogo16 from "/src/assets/workwith4.png";
-import imglogo17 from "/src/assets/workwith8.png";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
+import LeftArrow from "../../assets/left-arrow-.png";
+import RightArrow from "../../assets/right-arrow-6421.png";
+import imglogo1 from "../../assets/workwith1.png";
+import imglogo2 from "../../assets/workwith2.png";
+import imglogo3 from "../../assets/workwith3.png";
+import imglogo4 from "../../assets/workwith4.png";
+import imglogo5 from "../../assets/workwith5.png";
+import imglogo6 from "../../assets/workwith6.png";
+import imglogo7 from "../../assets/workwith1.png";
+import imglogo8 from "../../assets/workwith2.png";
+import imglogo9 from "../../assets/workwith3.png";
+import imglogo10 from "../../assets/workwith4.png";
+import imglogo11 from "../../assets/workwith5.png";
+import imglogo12 from "../../assets/workwith6.png";
+import imglogo13 from "../../assets/workwith1.png";
+import imglogo14 from "../../assets/workwith2.png";
+import imglogo15 from "../../assets/workwith3.png";
+import imglogo16 from "../../assets/workwith4.png";
+import imglogo17 from "../../assets/workwith8.png";
 
 const logo = [
   imglogo1,
@@ -46,6 +46,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
 const WorkingWith = () => {
   const [slidesPerView, setSlidesPerView] = useState(calculateSlidesPerView());
   const swiperRef = useRef(null);
@@ -71,8 +73,8 @@ const WorkingWith = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    return () => {                                                                                                                                                                        
-      
+    return () => {
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -107,29 +109,33 @@ const WorkingWith = () => {
       </div>
       <div className="flex items-center justify-center ">
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={10}
           slidesPerView={slidesPerView}
-          autoplay={{ delay: 300 }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          }}
+          loop={true}
           ref={swiperRef}
           className="w-100% p-4"
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}>
-          {logo.map((img, i) => {
-            return (
-              <SwiperSlide
-                key={i}
-
-                className="w-25% md:w-100% flex justify-center">
-
-                <img
-                  className="w-20 h-10 sm:w-32 sm:h-20 ml-10 md:w-44"
-                  src={img}
-                  alt="Logo"
-                />{" "}
-              </SwiperSlide>
-            );
-          })}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {logo.map((img, i) => (
+            <SwiperSlide
+              key={i}
+              className="w-25% md:w-100% flex justify-center"
+            >
+              <img
+                className="w-20 h-10 sm:w-32 sm:h-20 ml-10 md:w-44"
+                src={img}
+                alt={`Logo ${i + 1}`}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
