@@ -84,6 +84,11 @@ const NavBar = () => {
             id="example-navbar-danger"
           >
             <div className="flex flex-col gap-5 md:flex-row md:items-center list-none md:ml-auto">
+              <Link to='/'><div className="text-[14px]">
+                <button className="uppercase">
+                  Home
+                </button>
+              </div></Link>
               <div className="text-[14px]">
                 <button className="uppercase" onClick={handleContactClick}>
                   Contact
