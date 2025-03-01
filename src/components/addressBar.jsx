@@ -7,8 +7,7 @@ const AddressBar = () => {
           <a href="mailto:cozmekinfo@gmail.com">cozmekinfo@gmail.com</a>
         </div>
         <div>
-          <span className="hidden md:inline-block">Phone:</span>{" "}
-          <a href="tel:+918921216142">+918921216142</a>,{" "}
+          <span className="hidden md:inline-block">Phone:</span>
           <a href="tel:+918089991943">+918089991943</a>
         </div>
       </div>

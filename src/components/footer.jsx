@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import { useRef } from "react";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const LINKS = [
@@ -26,7 +27,7 @@ const Footer = () => {
       title: "Contact Info",
       items: [
         "cozmekinfo@gmail.com",
-        "+919061401943 || +917510747180",
+        "+917510747180",
         "Kothamangalam, Ernakulam - 686673",
         "Kerala, India",
       ],
@@ -170,18 +171,21 @@ const Footer = () => {
           </div>
 
           <div className=" flex  gap-10">
+            <Link to="/termsandconditions">
             <Typography
               variant="small"
               className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
             >
               Terms of Services
-            </Typography>
+            </Typography></Link>
+            <Link to="/privacy">
             <Typography
               variant="small"
               className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
             >
               Privacy Policy
             </Typography>
+            </Link>
           </div>
         </div>
       </footer>
