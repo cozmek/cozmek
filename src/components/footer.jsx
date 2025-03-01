@@ -171,20 +171,21 @@ const Footer = () => {
           </div>
 
           <div className=" flex  gap-10">
-            <Link to="/termsandconditions">
-            <Typography
-              variant="small"
-              className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
-            >
-              Terms of Services
-            </Typography></Link>
-            <Link to="/privacy">
-            <Typography
-              variant="small"
-              className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
-            >
-              Privacy Policy
-            </Typography>
+            <Link to="/termsandconditions" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Typography
+                variant="small"
+                className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
+              >
+                Terms of Services
+              </Typography>
+            </Link>
+            <Link to="/privacy" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Typography
+                variant="small"
+                className="mb-4 text-center font-normal text-[#6B7385] md:mb-0"
+              >
+                Privacy Policy
+              </Typography>
             </Link>
           </div>
         </div>
